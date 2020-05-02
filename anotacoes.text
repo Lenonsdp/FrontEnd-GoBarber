@@ -1,0 +1,122 @@
+yarn create react-app 'Name'
+
+yarn add eslint -D
+
+generate editor.config
+root = true
+
+[*]
+end_of_Line = lf
+indent_style = space
+indent_size = 4
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+
+se começar dar problema no import require
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+yarn add babel-plugin-root-import -D
+yarn add eslint-import-resolver-babel-plugin-root-import -D
+
+
+
+module.exports = {
+  env: {
+    es6: true,
+    jest: true,
+    browser: true
+  },
+  extends: ["airbnb", "prettier", "prettier/react"],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
+    __DEV__: true
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 2018,
+    sourceType: "module"
+  },
+  plugins: ["react", "jsx-a11y", "import", "react-hooks", "prettier"],
+  rules: {
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
+    "import/prefer-default-export": "off",
+    "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "react/jsx-one-expression-per-line": "off",
+    "global-require": "off",
+    "react-native/no-raw-text": "off",
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    camelcase: "off",
+    "no-console": ["error", { allow: ["tron"] }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  settings: {
+    "import/resolver": {
+      "babel-plugin-root-import": {
+        rootPathSuffix: "src"
+      },
+    },
+  },
+};
+
+.prettierrc
+{
+    "singleQuote": true,
+    "trailingComma": "es5"
+
+}
+
+
+yarn add react-router-dom
+
+yarn add styled-components
+vscode-styled-components """ extensão """
+
+yarn add react-icons
+
+yarn add axios
+
+yarn add prop-types
+
+yarn global add json-server
+fake api
+
+para rodar = json-server server.json -p 3333
+
+yarn add redux react-redux
+lib redux e integração com react
+
+
+yarn add reactotron-react-js reactotron-redux
+Ajuda a debugar a aplicação
+
+yarn add immer
+Consigo controlar o estado imutavel nos meus reducer aplicando
+algumas regras, criando um rascunho draft para alteração.
+
+
+Redux Saga middlewares que executa uma action no reducer, quando utilizar,
+por exemplo obter mais informações de um objteto ao entrar no mesmo.
+yarn add redux-saga
+
+
+yarn add reactotron-redux-saga
+Plugin para o reactotron
+
+
+yarn add react-toastify
+Ele é um alerta do react um toast.
+
+yarn add history
+Serve para controlar as history do navegador criando o arquivo history.js
+importo no app troco browserHIstory por Router e adiciono a opção <history={history}>...
+
+
+ yarn add eslint-plugin-react-hooks
