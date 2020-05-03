@@ -81,6 +81,10 @@ vscode-styled-components """ extensão """
 
 yarn add react-icons
 
+yarn add @rocketseat/unform para formularios
+
+yarn add yup = validation schema
+
 yarn add axios
 
 yarn add prop-types
