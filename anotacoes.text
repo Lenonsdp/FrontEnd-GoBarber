@@ -114,6 +114,7 @@ yarn add redux-saga
 yarn add reactotron-redux-saga
 Plugin para o reactotron
 
+Resumindo  = yarn add redux redux-saga react-redux reactotron-redux reactotron-redux-saga immer
 
 yarn add react-toastify
 Ele é um alerta do react um toast.
