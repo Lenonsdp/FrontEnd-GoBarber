@@ -116,6 +116,8 @@ Plugin para o reactotron
 
 Resumindo  = yarn add redux redux-saga react-redux reactotron-redux reactotron-redux-saga immer
 
+yarn add redux-persist lib para persistir preferencias do redux, por exemplo dados da session
+
 yarn add react-toastify
 Ele é um alerta do react um toast.
 
