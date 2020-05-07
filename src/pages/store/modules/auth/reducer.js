@@ -22,6 +22,10 @@ export default function auth(state = INITIAL_STATE, action) {
             return produce(state, (draft) => {
                 draft.loading = false;
             });
+        case '@auth/SIGN_UP_REQUEST':
+            return produce(state, (draft) => {
+                draft.loading = true;
+            });
         default:
             return state;
     }
