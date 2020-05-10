@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logoPurple.svg';
 import { Container, Content, Profile } from './styles';
+import Notifications from '../Notifications';
 
-function header() {
+function Header() {
     return (
         <Container>
             <Content>
@@ -11,8 +12,8 @@ function header() {
                     <img src={logo} alt="Logo" />
                     <Link to="/dashboard">Dashboard</Link>
                 </nav>
-
                 <aside>
+                    <Notifications />
                     <Profile>
                         <div>
                             <strong>Lenon Szynweslki</strong>
@@ -29,4 +30,4 @@ function header() {
     );
 }
 
-export default header;
+export default Header;

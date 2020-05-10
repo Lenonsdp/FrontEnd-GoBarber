@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../../../component/header';
+import Header from '../../../component/Header';
 import { Wrapper } from './styles';
 
 function DefaultLayout({ children }) {
