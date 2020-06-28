@@ -7,7 +7,6 @@ function AvatarInput() {
     const { defaultValue, registerField } = useField('avatar');
     const [ file, setFile ] = useState(defaultValue && defaultValue.id);
     const [ preview, setPreview ] = useState(defaultValue && defaultValue.url);
-
     const ref = useRef();
 
     useEffect(() => {
@@ -25,21 +24,22 @@ function AvatarInput() {
 
         data.append('file', e.target.files[0]);
 
-        const respose = await api.post('files', data);
+        const response = await api.post('files', data);
+        console.tron.log(response);
 
-        const { id, url } = respose.data;
+        const { id, url } = response.data;
 
         setFile(id);
         setPreview(url);
     }
-  return (
-    <Container>
-        <label>
-            <img src={preview || "https://api.adorable.io/avatars/50/abott@adorable.png"} alt=""/>
-            <input type="file" id="avatar" accept="image/*" data-file={file} ref={ref} onChange={handleChange} />
-        </label>
-    </Container>
-  );
+    return (
+        <Container>
+            <label>
+                <img src={preview || "https://api.adorable.io/avatars/50/abott@adorable.png"} alt=""/>
+                <input type="file" id="avatar" accept="image/*" data-file={file} ref={ref} onChange={handleChange} />
+            </label>
+        </Container>
+    );
 }
 
 export default AvatarInput;

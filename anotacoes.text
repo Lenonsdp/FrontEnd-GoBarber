@@ -129,3 +129,6 @@ importo no app troco browserHIstory por Router e adiciono a opção <history={hi
  yarn add eslint-plugin-react-hooks
 
 yarn add date-fns@next
+
+yarn add date-fns-tz
+timezone tratamento
